@@ -1,0 +1,21 @@
+
+
+
+.container {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+    background-image: url(./assect/png/blur.png);
+    background-size: cover;
+    max-width: 1920px;
+   width: 100%;
+  
+}
+
+section {
+  margin-top: 100px;
+}

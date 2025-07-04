@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SPEAK</title>
+		<!-- Here is Tailwind CSS link -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Here is google fonts link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Here is style css link -->
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div
+					style="padding: 2px 0"
+					class="header__items flex items-center justify-between"
+				>
+					<div class="header__logo">
+						<img class="size-40 max-[1200px]:w-35" src="./assect/svg/logo.svg" alt="" />
+					</div>
+
+					<nav class="max-[850px]:hidden">
+						<ul class="flex gap-10 font-normal">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+
+					<div class="flex gap-3 items-center font-normal" class="header__button"
+					>
+						<label for="country"
+							><img src="/assect/svg/eng.svg" alt=""
+						/></label>
+						<select class="max-[900px]:hidden" id="country" name="country">
+							<option value="en">EN</option>
+							<option value="ru">RU</option>
+						</select>
+            <img class="max-[2000px]:hidden max-[900px]:block" src="./assect/svg/burgermenu.svg" alt="">
+						<a
+							href="#"
+							style="padding: 12px 32px"
+							class="bg-green-600 rounded-xl text-white"
+							>Войти</a
+						>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="max-[1200px]:m-20">
+			<section class="sesia">
+				<div class="container">
+					<div class="sesia__items flex justify-between max-[900px]:block">
+						<div style="margin-top: 122px;" class="sesia__titels max-[900px]:justify-center max-[900px]:flex  max-[900px]:items-center">
+							<div class="sesia__text ">
+								<p class="text-green-500 max-[1060px]:text-base max-[900px]:text-center">+300 прошедших отбор психологов</p>
+								<h2 class="font-bold max-w-lg text-5xl leading-[120%] max-[1060px]:text-4xl max-[900px]:max-w-lg max-[900px]:text-center">
+									Сессии с психологом Онлайн
+								</h2>
+							</div>
+							<button
+								class="bg-green-500 rounded-xl text-white max-[1060px]:text-sm max-[900px]:hidden"
+								style="padding: 14px 30px; margin-top: 50px"
+							>
+								Начать беседу
+							</button>
+						</div>
+
+						<div  class="sesia__img  max-[900px]:justify-center max-[900px]:flex max-[900px]:mt-[50px]  max-[900px]:items-center">
+							<img sty class="max-[750px]:w-70 max-width" src="./assect/png/1.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="video">
+				<div class="container">
+					<div style="margin-top: 200px; justify-content: center;" class="video__items flex gap-20 max-[1200px]:gap-10 max-[900px]:block ">
+						<div class="video__video max-[900px]:justify-center max-[900px]:flex  max-[900px]:items-center">
+							<img class="max-[1000px]:w-110" src="./assect/png/video.png" alt="" />
+						</div>
+
+						<div class="video__tile ">
+							<div class="text1 max-[900px]:justify-center max-[900px]:flex  max-[900px]:items-center">
+								<h2 class="max-w-md font-bold text-4xl max-[1000px]:text-3xl max-[900px]:justify-center max-[900px]:max-w-lg max-[900px]:flex  max-[900px]:items-center max-[900px]:text-center">
+									Скачайте бесплатно приложение SPEAK
+								</h2>
+							</div>
+							<div style="margin-top: 20px" class="text2 flex gap-5 max-[900px]:justify-center max-[900px]:flex  max-[900px]:items-center">
+								<img style="padding: 14px 14px; @media (max-width: 1000px) {padding: 8px 8px;}" class="bg-white shadow-sm max-[1000px]:w-18" src="./assect/svg/s.svg" alt="" />
+								<div class="text4 max-[1200px]">
+									<h2 class="text-green-500 font-semibold text-2xl max-[1000px]:text-xl max-">Speak</h2>
+									<p class="text-base font-normal max-[1000px]:text-sm">
+										онлайн сессии с психологом
+									</p>
+									<p class="text-base font-normal max-[1000px]:text-sm max-w-sm">
+										доступно для iOS и Android
+									</p>
+								</div>
+							</div> 
+							<div style="margin-top: 20px" class="text3 flex max-[900px]:justify-center max-[900px]:flex  max-[900px]:items-center">
+								<img class="max-[1200px]:w-35 max-[1200px]:w-25 " src="./assect/png/appstore.png" alt="" />
+								<img class="max-[1200px]:w-35 max-[1200px]:w-25" src="./assect/png/playstore.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="peple">
+				<div class="conainer">
+					<div class="peple__items">
+						<div style="display: flex; justify-content: center" class="peple__title">
+							<h2 class=" font-bold text-3xl max-[1200px]:text-2xl max-[900px]:text-center max-[900px]:items-center">Психологи работающие с актуальными темами</h2>
+						</div>
+
+						<div style="display: flex; justify-content: center; margin-top: 55px;" class="peple__block">
+
+							<div class="flex gap-15 max-[1100px]:hidden" class="peple__text">
+								<div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg max-[1200px]:w-" class="peple_a">
+									<p class="font-normal text-lg max-[1200px]:text-sm">Чувства</p>
+								</div>
+
+								<div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg"  class="peple_a">
+									<p class="font-normal text-lg">Одиночество</p>
+								</div>
+
+								<div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg"  class="peple_a">
+									<p class="font-normal text-lg text-blue-400">Вредные привычки</p>
+								</div>
+
+								<div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg"  class="peple_a">
+									<p class="font-normal text-lg">Отношения</p>
+								</div>
+
+								<div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg"  class="peple_a">
+									<p class="font-normal text-lg">Работа</p>
+								</div>
+
+								<div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg" class="peple_a">
+									<p class="font-normal text-lg">Смыслы</p>
+								</div>
+							</div>
+						</div>
+
+            <div style="display: flex; justify-content: center; margin-top: 30px; " class="peple__block1">
+              <div class="flex gap-15 max-[1100px]:hidden" class="peple__text2">
+                <div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg" class="peple__bb">
+                  <p class="font-normal text-lg">Одиночество</p>
+                </div>
+
+                <div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg" class="peple__bb" class="peple__bb">
+                  <p class="font-normal text-lg">Одиночество</p>
+                </div>
+
+                <div style="padding: 10px 30px;" class="bg-white shadow-md rounded-lg" class="peple__bb" class="peple__bb">
+                  <p class="font-normal text-lg">Отношения с близкими</p>
+                </div>
+
+                <div style="padding: 10px 30px;" class="bg-blue-500 shadow-md rounded-lg" class="peple__bb" class="peple__bb">
+                  <p class="font-normal text-lg text-white">+ 300 психологов</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 51px; justify-content: center;" class="flex gap-5 max-[1100px]:flex-wrap" class="peple__kart">
+              
+              <div style="padding: 15px 15px;" class="bg-white shadow-md rounded-lg" class="peple__kart__a">
+                <img src="./assect/png/photo1.png" alt="">
+                <div style="margin-top: 15px;" class="peple__kart__text">
+                  <h2 class="font-bold text-lg">Илья Благов</h2>
+                  <div class="flex items-center justify-between" class="peple__icon">
+                    <div style="margin-top: 10px;" class="flex gap-2" class="peple__start">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                    </div> 
+
+                    <img src="./assect/svg/left.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              
+              <div style="padding: 15px 15px;" class="bg-white shadow-md rounded-lg" class="peple__kart__a">
+                <img src="./assect/png/photo2.png" alt="">
+                <div style="margin-top: 15px;" class="peple__kart__text">
+                  <h2 class="font-bold text-lg">Иванна Есина</h2>
+                  <div class="flex items-center justify-between" class="peple__icon">
+                    <div style="margin-top: 10px;" class="flex gap-2" class="peple__start">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                    </div> 
+
+                    <img src="./assect/svg/left.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div style="padding: 15px 15px;" class="bg-white shadow-md rounded-lg" class="peple__kart__a">
+                <img src="./assect/png/photo3.png" alt="">
+                <div style="margin-top: 15px;" class="peple__kart__text">
+                  <h2 class="font-bold text-lg">Артур Островский</h2>
+                  <div class="flex items-center justify-between" class="peple__icon">
+                    <div style="margin-top: 10px;" class="flex gap-2" class="peple__start">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                    </div> 
+
+                    <img src="./assect/svg/left.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div style="padding: 15px 15px;" class="bg-white shadow-md rounded-lg" class="peple__kart__a">
+                <img src="./assect/png/photo4.png" alt="">
+                <div style="margin-top: 15px;" class="peple__kart__text">
+                  <h2 class="font-bold text-lg">Юля Заграничная</h2>
+                  <div class="flex items-center justify-between" class="peple__icon">
+                    <div style="margin-top: 10px;" class="flex gap-2" class="peple__start">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                    </div> 
+
+                    <img src="./assect/svg/left.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div style="padding: 15px 15px;" class="bg-white shadow-md rounded-lg" class="peple__kart__a">
+                <img src="./assect/png/photo5.png" alt="">
+                <div style="margin-top: 15px;" class="peple__kart__text">
+                  <h2 class="font-bold text-lg">Андрей Ян</h2>
+                  <div class="flex items-center justify-between" class="peple__icon">
+                    <div style="margin-top: 10px;" class="flex gap-2" class="peple__start">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                      <img src="./assect/svg/start.svg" alt="">
+                    </div> 
+
+                    <img src="./assect/svg/left.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
+
+            </div>  
+            
+            <div style="margin-top: 40px; display: flex; justify-content: center;" class="peple__tab flex gap-2">
+              
+              <div class="bg-blue-300 rounded-lg px-[20px] py-[6px] max-[1100px]:px-[15px] max-[1100px]:py-[4px]"></div>
+
+              <div class="bg-blue-300 rounded-lg px-[20px] py-[6px] max-[1100px]:px-[15px] max-[1100px]:py-[4px]"></div>
+              
+
+              <div class="bg-blue-500 rounded-lg px-[30px] py-[6px] max-[1100px]:px-[20px] max-[1100px]:py-[5px]"></div>
+
+
+              <div class="bg-blue-300 rounded-lg px-[20px] py-[6px] max-[1100px]:px-[15px] max-[1100px]:py-[4px]"></div>
+
+              <div class="bg-blue-300 rounded-lg px-[20px] py-[6px] max-[1100px]:px-[15px] max-[1100px]:py-[4px]"></div>
+            </div>
+					</div>
+				</div>
+			</section>
+
+
+      <section class="help">
+        <div class="container">
+          <div style="display: flex; justify-content: space-between; padding: 40px 40px; align-items: center;" class="help__items max-[900px]:flex-col">
+            <div class="help__titels">
+              <h2 class="text-3xl font-bold ">Поможем вам</h2>
+
+              <div style="margin-top: 40px;" class="help__text gap-2 flex flex-col max-[900px]:gap-5 max-[550px]:text-xs">
+                <div  class="flex gap-2 max-[900px]:max-w-2xl" class="help__blocktext">
+                  <img src="./assect/svg/helpicon.svg" alt="">
+                  <p class="font-normal text-lg max-[550px]:text-sm">Разрешить причины сложных отношений с партнером</p>
+                </div>
+
+                <div class="flex gap-2" class="help__blocktext">
+                  <img src="./assect/svg/helpicon.svg" alt="">
+                  <p class="font-normal text-lg max-[550px]:text-sm">Снять или снизить остроту переживаний</p>
+                </div>
+
+                <div class="flex gap-2" class="help__blocktext">
+                  <img src="./assect/svg/helpicon.svg" alt="">
+                  <p class="font-normal text-lg max-[550px]:text-sm">Справиться с выгоранием на работе и найти мотивацию</p>
+                </div>
+
+                <div class="flex gap-2" class="help__blocktext">
+                  <img src="./assect/svg/helpicon.svg" alt="">
+                  <p class="font-normal text-lg max-[550px]:text-sm">Понять себя в отношениях с близкими людьми</p>
+                </div>
+
+                <div class="flex gap-2" class="help__blocktext">
+                  <img src="./assect/svg/helpicon.svg" alt="">
+                  <p class="font-normal text-lg max-[550px]:text-sm">Найти себя и понимать свои желания</p>
+                </div>
+
+                 <div class="flex gap-2" class="help__blocktext">
+                  <img src="./assect/svg/helpicon.svg" alt="">
+                  <p class="font-normal text-lg max-[550px]:text-sm">Исследовать и управлять изменениями в своей жизни</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="help__img">
+              <img src="./assect/png/helpimg.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="phone">
+        <div class="container">
+          <div style="justify-content: center; margin: 0 auto; height: 519px; max-width: 1120px; width: 100%;" class="phone__items flex items-center bg-blue-100 rounded-xl">
+            <div class="phone__img relative top-[-60px] ">
+              <img src="./assect/png/phone.png" alt="">
+            </div>
+
+            <div class="phone__titels">
+              <h2 class="font-bold text-4xl max-w-2xl max-[900px]:text-2xl max-[600px]:text-base">
+                Преимущества онлайн сессий с психологом
+              </h2>
+              
+              
+              
+              <div style="margin-top: 30px;" class="phone__text ">
+                <div class="flex gap-2" class="phone__block1">
+                  <img src="./assect/svg/toch.svg" alt="">
+                  <h2 class="font-bold text-xl max-[900px]:text-base max-[600px]:text-sm">
+                    Занимайтесь где и как удобно
+                  </h2>
+                </div>
+                <p class="text-lg font-normal max-[900px]:text-sm max-[600px]:text-xs">Дома или в поездке и в любом часовом поясе</p>
+              </div>
+
+
+              <div style="margin-top: 30px;" class="phone__text">
+                <div class="flex gap-2" class="phone__block1">
+                  <img src="./assect/svg/toch.svg" alt="">
+                  <h2 class="font-bold text-x1  max-[900px]:text-base max-[600px]:text-sm ">
+                    Меньше забот- больше мотивации
+                  </h2>
+                </div>
+                <p class="text-lg font-normal max-[900px]:text-sm max-[600px]:text-xs">Не тратьте время на дорогу и управляйте занятиями в два клика</p>
+              </div>
+
+              <div style="margin-top: 30px;" class="phone__text">
+                <div class="flex gap-2" class="phone__block1">
+                  <img src="./assect/svg/toch.svg" alt="">
+                  <h2 class="font-bold text-x1  max-[900px]:text-base max-[600px]:text-sm">
+                    Доверяйте себе
+                  </h2>
+                </div>
+                <p class="text-lg font-normal mx-w-lg max-[900px]:text-sm max-[900px]:max-w-md max-[600px]:text-xs">Выбирайте среди проверенных психологов, которые специаллизируются на ваших запросах</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="otrib">
+        <div class="container">
+          <div class="otrib__items">
+            <div class="otrib__titels max-[900px]:text-center max-[900px]:justify-center max-[900px]:items-center max-[900px]:flex max-[900px]:flex-col">
+              <h2 class="font-bold text-4xl max-[900px]:text-2xl">Как мы отбираем специалистов?</h2>
+              <p class="text-blue-400 max-[900px]:text-sm">Отбор проходят меньше 10% специаллистов</p>
+            </div>
+
+            <div style="margin-top: 60px;" class="flex gap-2" class="otrib__block">
+              <div class="otrib__text flex flex-col gap-20">
+                <div class="otrib__block1 flex items-center gap-">
+                  <img class="max-[900px]:W-20 max-[900px]:h-18 max-[700px]:W-15 max-[700px]:h-15 " src="./assect/svg/1.svg" alt="">
+                  <div class="text__otrib">
+                    <h2 class="font-bold text-xl max-[900px]:text-lg max-[700px]:text-base">Документы об образовании</h2>
+                    <p class="max-w-3xl font-normal text-xl max-[900px]:text-sm max-[700px]:text-xs">Обязательно иметь высшее психологическое образование и сертификаты для ведения психотерапии</p>
+                  </div>
+                </div>
+
+                <div class="otrib__block1 flex items-center gap-">
+                  <img class="max-[900px]:W-20 max-[900px]:h-18 max-[700px]:W-15 max-[700px]:h-15" src="./assect/svg/2.svg" alt="">
+                  <div class="text__otrib">
+                    <h2 class="font-bold text-xl max-[900px]:text-lg max-[700px]:text-base">Опыт частной практики и личной терапии</h2>
+                    <p class="max-w-3xl font-normal text-xl max-[900px]:text-sm max-[700px]:text-xs">Нужно не менее 3-х лет частной практики, личная терапия и регулярные супервизии</p>
+                  </div>
+                </div>
+
+
+                <div class="otrib__block1 flex items-center gap-">
+                  <img class="max-[900px]:W-20 max-[900px]:h-18 max-[700px]:W-15 max-[700px]:h-15" src="./assect/svg/3.svg" alt="">
+                  <div class="text__otrib">
+                    <h2 class="font-bold text-xl max-[900px]:text-lg max-[700px]:text-base">Собеседование с нашим экспертом-ментором</h2>
+                    <p class="max-w-3xl font-normal text-xl max-[900px]:text-sm max-[700px]:text-xs">Отслеживаются коммуникативные способности, уровень эмпатии, манера и стиль беседы,  проффесиональные компетенции</p>
+                  </div>
+                </div>
+              </div>
+              <div class="otrib__img">
+                <img class="max-[900px]:hidden" src="./assect/png/otribimg.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="server">
+        <div class="container">
+          <div class="server__items">
+            <div class="server__titels flex justify-center">
+              <h2 class="font-bold text-4xl max-[900px]:text-2xl">О сервисе</h2>
+            </div>
+
+            <div style="margin: 40px 80px;" class="server__block flex gap-20 ga items-center max-[900px]:flex-col">
+              <div class="server__img">
+                <img  class="max-[1200px]:h-90 max-[1200px]:w-120 max-[1000px]:h-60 max-[1000px]:w-100 max-[690px]:h-40 max-[690px]:w-90 max-[600px]:h-20 max-[600px]:w-60" src="./assect/png/video (1).png" alt="">
+              </div>
+              <div class="server__text flex flex-col gap-4 max-[900px]:text-center">
+                <h2 class="font-bold text-4xl text-orange-400 max-[900px]:text-3xl max-[750px]:text-2xl">900 +</h2>
+                <p class="font-normal text-lg max-[900px]:text-sm">регистраций вчера</p>
+                <h2 class="font-bold text-4xl text-orange-400 max-[900px]:text-3xl max-[750px]:text-2xl">75 000 +</h2>
+                <p class="font-normal text-lg max-[900px]:text-sm">проведено сессий</p>
+                <h2 class="font-bold text-4xl text-orange-400 max-[900px]:text-3xl max-[750px]:text-2xl">354 +</h2>
+                <p class="font-normal text-lg max-[900px]:text-sm">психологов</p>
+              </div>
+            </div>
+
+            <div class="server__tab flex gap-10 items-center justify-center max-[900px]:flex-col">
+              <div style="padding: 20px 30px; max-width: 550px; height: 120px; width: 100%;" class="tab1 flex items-center bg-white shadow-lg rounded-xl">
+                <img class="max-[950px]:w-18 max-[950px]:h-18" src="./assect/svg/tab1.svg" alt="">
+                <div class="tab__text">
+                  <h2 class="font-bold text-xl max-[900px]:text-base max-[550px]:text-sm">Подбор “По позже”</h2>
+                  <p class="font-normal max-w-lg max-[900px]:text-sm max-[550px]:text-xs">Подбор с возможностью бронирование сессии на будущее</p>
+                </div>
+              </div>
+
+              <div style="padding: 20px 30px; max-width: 550px; height: 120px; width: 100%;" class="tab1 flex items-center bg-white shadow-lg rounded-xl">
+                <img class="max-[950px]:w-18 max-[950px]:h-18" src="./assect/svg/tab2.svg" alt="">
+                <div class="tab__text">
+                  <h2 class="font-bold text-xl max-[900px]:text-base max-[550px]:text-sm">Подбор “Сейчас”</h2>
+                  <p class="font-normal max-w-lg max-[900px]:text-sm max-[550px]:text-xs">Подбор с возможностью начала сессии “здесь и сейчас”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="kak">
+        <div class="container">
+          <div style="margin-top: 100px;" class="kak__items">
+            <div class="kak__titels flex justify-center">
+              <h2 class="font-bold text-4xl max-[900px]:text-2xl">Как это устроено</h2>
+            </div>
+
+            <div style="margin-top: 70px;" class="kak__white flex justify-center gap-20 ">
+              <div class="kak__block__a flex flex-col gap-30  max-[800px]:hidden">
+                <div class="kak__block1">
+                  <div class="kak__text flex items-center gap-2">
+                    <img class="max-[1000px]:w-15 max-[1000px]:h-8" src="./assect/svg/num1.svg" alt="">
+                    <p class="font-bold text-xl max-[1150px]:text-base max-[1000px]:text-sm">Заполните простую анкету</p>
+                  </div>
+                  <p style="margin-left: 40px;" class="max-w-2xs font-normal text-lg max-[1150px]:text-sm max-[1150px]:text-xs">Расскажите, что вас беспокоит и что важно в психологе. </p>
+                </div>
+
+                <div class="kak__block1">
+                  <div class="kak__text flex items-center gap-2">
+                    <img class="max-[1000px]:w-15 max-[1000px]:h-8" src="./assect/svg/num3.svg" alt="">
+                    <p class="font-bold text-xl max-w-3xs max-[1150px]:text-base max-[1000px]:text-sm">Выберите способ связи с психологом</p>
+                  </div>
+                  <p style="margin-left: 40px;" class="max-w-xs font-normal text-lg max-[1150px]:text-sm max-[1150px]:text-xs">49руб/мин по <span class="text-blue-500 "> аудио/видео связи</span> 200руб за 24 часа <span class="text-blue-500"> чата + аудио сообщения</span> </p>
+                </div>
+              </div>
+              
+              <div class="kak__img flex flex-col">
+                <img class="relative top-[-40px] max-[900px]:w-80" src="./assect/png/Mobile.png" alt="">
+                <button class="px-[30px] py-[15px] border text-2xl font-bold text-blue-500 rounded-xl max-[900px]:px-[25px] max-[900px]:py-[10px] max-[900px]:text-base">
+                  Начать общение
+                </button>
+                
+              </div>
+
+              <div class="kak__block__b flex flex-col gap-30  max-[800px]:hidden">
+                <div class="kak__block1">
+                  <div class="kak__text flex items-center gap-2">
+                    <img class="max-[1000px]:w-15 max-[1000px]:h-8" src="./assect/svg/num2.svg" alt="">
+                    <p class="font-bold text-xl max-[1150px]:text-base max-[1000px]:text-sm">Выберите психолога</p>
+                  </div>
+                  <p style="margin-left: 40px;" class="max-w-2xs font-normal text-lg text-lg max-[1150px]:text-sm max-[1150px]:text-xs">Выберите понравившегося психолога </p>
+                </div>
+
+                <div class="kak__block1">
+                  <div class="kak__text flex items-center gap-2">
+                    <img class="max-[1000px]:w-15 max-[1000px]:h-8" src="./assect/svg/num4.svg" alt="">
+                    <p class="font-bold text-xl max-w-3xs max-[1150px]:text-base max-[1000px]:text-sm">Начните общение</p>
+                  </div>
+                  <p style="margin-left: 40px;" class="max-w-xs font-normal text-lg text-lg max-[1150px]:text-sm max-[1150px]:text-xs">Все общение происходит через платформу SPEAK. Вслучае если психолог вам не понравится, вы можете заменить его без дополнительных переплат</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="time">
+        <div class="container">
+          <div class="time__items relative">
+            <div class="time__title">
+              <h2 class="font-bold text-4xl max-[900px]:text-2xl">
+                Услуги
+              </h2>
+            </div>
+
+
+            <div  class="time__blox flex gap-10 items-center items-end mt-[67] max-[900px]:flex-wrap-reverse max-[900px]:mt-[70px] max-[900px]:justify-center">
+
+              <div class="time__block1 bg-green-200 rounded-xl max-w-[454px] h-[317px] p-[30px] max-[1200px]:h-[340px] max-[650px]:h-[380px]">
+                <div class="text__time1">
+                 <p class="font-bold text-xl max-[900px]:text-base">24 часа чата </p>
+                </div> 
+ 
+                <div class="text__time2 mt-[5px] flex items-end gap-2">
+                 <h2 class="font-bold text-6xl max-[900px]:text-5xl max-[800px]:text-4xl">
+                   4200₽
+                 </h2>
+                 <p class="font-normal text-2xl max-[900px]:text-lg max-[800px]:text-base">/ 24 часа</p>
+                </div>
+ 
+                <div style="margin-top: 30px;" class="time__text__img">
+                 <div class="text__img__1 flex items-center gap-2">
+                   <img src="./assect/svg/helpicon.svg" alt="">
+                   <p class="text-lg max-[900px]:text-base">24 часа доступа к чату с психологом</p>
+                 </div>
+                 <div style="margin-top: 10px;" class="text__img__2 flex items-center gap-2">
+                   <img src="./assect/svg/helpicon.svg" alt="">
+                   <p class="text-lg max-[900px]:text-base">Аудио сообщения</p>
+                 </div>
+                </div>
+ 
+                <button class="mt-[30px] px-[30px] py-[14px] text-blue-600 font-bold bg-white shadow-md rounded-xl max-[900px]:mt-[40px]">
+                  Перейти
+                </button>                
+             </div>
+             
+             <div class="time__block2 bg-blue-300 rounded-xl max-w-[649px] w-full h-[352px] p-[30px] max-[1150px]:h-[380px] max-[900px]:w-[809px] max-[850px]:h-[380px] max-[650px]:h-[600px] relative">
+
+              <div class="time__img1">
+                <img class="absolute top-[-0px] left-[505px] max-[1200px]:hidden"  src="./assect/png/popular.png" alt="">
+              </div>
+
+              <div class="text__time1">
+               <p class="font-bold text-xl text-white max-[900px]:text-base">Аудио/Видео сессии</p>
+              </div> 
+
+              <div class="text__time2 flex items-end gap-2 mt-[5px] max-[900px]:mt-[20px]">
+               <h2 class="font-bold text-6xl text-white max-[900px]:text-5xl">
+                49₽
+               </h2>
+               <p class="font-normal text-2xl text-white max-[900px]:text-lg">/ 1 минута</p>
+              </div>
+
+              <div class="time__text__img items-end mt-[30px] max-[600px]:mt-[40px]">
+               <div class="text__img__1 flex items-center gap-2">
+                 <img src="./assect/svg/helpicon.svg" alt="">
+                 <p class="text-lg text-white max-[900px]:text-base">Безлимитный доступа к чату с психологом до начала сессии</p>
+               </div>
+               <div style="margin-top: 10px;" class="text__img__2 flex items-center gap-2">
+                 <img src="./assect/svg/helpicon.svg" alt="">
+                 <p class="text-lg text-white max-[900px]:text-base">Аудио/Видео звонки</p>
+               </div>
+               <div style="margin-top: 10px;" class="text__img__2 flex items-center gap-2">
+                <img src="./assect/svg/helpicon.svg" alt="">
+                <p class="text-lg text-white max-[900px]:text-base">Нет лимитов по времени разговора</p>
+              </div>
+              </div>
+
+              <div class="time__button__wh flex gap-3 max-[650px]:flex-col max-[650px]:mt-[40px]">
+                <button style="padding: 1px 30px; margin-top: 30px;" class="text-blue-600 font-bold bg-white shadow-md rounded-xl flex gap-5 items-center"><img src="./assect/svg/buttonlef.svg" alt=""> <p class="font-light text-black">20</p> <img src="./assect/svg/buttonprav.svg" alt=""> <p class="font-light text-black">min</p> <img src="./assect/svg/buttonlin.svg" alt=""> <p class="font-light text-black">40</p> <p class="font-light text-black">₽</p></button>
+                <button style="padding: 14px 30px; margin-top: 30px;" class="text-blue-600 font-bold bg-white shadow-md rounded-xl">Перейти</button>
+              </div>
+           </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="speak">
+        <div class="container">
+          <div style="margin-top: 150px;" class="speak__items flex justify-between max-[900px]:flex-col-reverse max-[900px]:justify-center">
+            <div class="speak__titels">
+              <div class="speak__text1 max-[900px]:justify-center max-[900px]:flex max-[900px]:items-center">
+                <h2 class="font-bold text-4xl max-w-md max-[900px]:text-3xl">Скачайте бесплатно приложение SPEAK</h2>
+              </div>
+              <div style="margin-top: 40px;" class="speak__img__text flex gap-5 max-[900px]:ml-[-50px] max-[900px]:justify-center max-[900px]:flex max-[900px]:items-center ">
+                <img style="padding: 14px 14px;" class="bg-white shadow-lg rounded-xl" src="./assect/svg/s.svg" alt="">
+                <div class="text__speak ">
+                  <h2 class="font-bold text-xl text-blue-400">SPEAK</h2>
+                  <p class="font-normal">онлайн сессии с психологом</p>
+                  <p class="font-normal">доступно для iOS и Android</p>
+                </div>
+              </div>
+              <div style="margin-top: 70px;" class="speak__store__img flex gap-5 max-[900px]:justify-center max-[900px]:flex max-[900px]:items-center  max-[900px]:ml-[-50px]">
+                <button>
+                  <a href="#"><img src="./assect/png/appstore __speak.png" alt=""></a>
+                </button>
+                <button>
+                  <a href="#"><img src="./assect/png/playstore ___speak.png" alt=""></a>
+                </button>
+              </div>
+            </div>
+
+            <div class="speak__img">
+              <img src="./assect/png/phone_p.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="review">
+        <div class="container">
+          <div class="review__items">
+            <div class="review__titels relative max-[1200px]:items-center max-[1200px]:flex max-[1200px]:justify-center">
+              <h2 class="font-bold text-4xl">Отзывы</h2>
+            </div>
+
+            <div style="margin-top: 50px;" class="review__block flex gap-5 max-[1200px]:flex-col max-[1200px]:justify-center max-[1200px]:flex max-[1200px]:items-center ">
+              <div class="review__blox1 bg-white shadow-xl flex gap-5 rounded-xl max-w-[549px] h-[305px] w-full p-[30px] max-[750px]:h-[260px]">
+                <img class="w-[100px] h-[100px] max-[750px]:w-[80px] max-[750px]:h-[80px] max-[550px]:h-[60px] max-[550px]:h-[60px]" src="./assect/png/ot1.png" alt="">
+                <div class="review__text">
+                  <div class="text1 flex items-center gap-40  max-[750px]:gap-15 max-[550px]:gap-10">
+                    <h2 class="text-base font-normal max-[750px]:text-sm">Sophia Jones</h2>
+                    <div class="text__start__img flex gap-2 max-[750px]:w-[10px]  max-[550px]:w-[5px]">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="text__2">
+                    <p class="font-bold text-base">Teacher</p>
+                  </div>
+                  <div style="margin-top: 10px;" class="text__3">
+                    <p class="font-normal text-base max-w-xs max-[750px]:text-sm  max-[650px]:text-xs max-[0px]:text-[20px]">
+                      After just 2 months, Speak has already made such an impact on my life. It has helped me develop manageable solutions to feelings of stress, anxiety, and overwhelm. Speaker helped me navigate the difficult stages of grief after losing my mom, with compassion and encouragement. And she’s easy to open up to, making me feel heard and understood.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review__blox1 bg-white shadow-xl flex gap-5 rounded-xl max-w-[549px] h-[305px] w-full p-[30px] max-[750px]:h-[260px] max-[700px]:hidden">
+                <img style="width: 100px; height: 100px;" src="./assect/png/ot2.png" alt="">
+                <div class="review__text">
+                  <div class="text1 flex items-center gap-40">
+                    <h2 class="text-base font-normal">Jay K. Braun</h2>
+                    <div class="text__start__img flex gap-2">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                      <img style="width: 11px; height: 11px;" src="./assect/svg/text__start.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="text__2">
+                    <p class="font-bold text-base">Artist</p>
+                  </div>
+                  <div style="margin-top: 10px;" class="text__3">
+                    <p class="font-normal text-base max-w-sm">
+                      After just 2 months, Speak has already made such an impact on my life. It has helped me develop manageable solutions to feelings of stress, anxiety, and overwhelm. Speaker helped me navigate the difficult stages of grief after losing my mom, with compassion and                     </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div style="margin-top: 40px;" class="tab__review flex justify-center gap-2 ">
+              <div style="width: 20px; height: 6px;" class="block1 bg-blue-300 rounded-xl"></div>
+
+              <div style="width: 20px; height: 6px;" class="block1 bg-blue-300 rounded-xl"></div>
+
+
+              <div style="width: 30px; height: 6px;" class="block1 bg-blue-400 rounded-xl"></div>
+
+
+              <div style="width: 20px; height: 6px;" class="block1 bg-blue-300 rounded-xl"></div>
+              
+              <div style="width: 20px; height: 6px;" class="block1 bg-blue-300 rounded-xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="text">
+        <div class="container">
+          <div class="text__items">
+            <div class="text__titels flex justify-between">
+              <h2 class="font-bold text-4xl">Детский психолог онлайн</h2>
+            </div>
+            <div style="margin-top: 30px;" class="text___conspest flex justify-center gap-10 max-[700px]:flex-col">
+            
+            <div class="text__block1">
+              <div class="blox1">
+                <h2 class="text-2xl font-bold">Чем поможет детский психолог онлайн?</h2>
+                <p style="margin-top: 10px;" class="max-w-xl">Каждый родитель хочет, чтобы его ребенок рос сильной уравновешенной личностью. Мы понимаем, что именно в детстве формируются зачатки характера. Как справиться с возникающими проблемами, как выстроить отношения с ребенком, чтобы он доверял вам? На эти и другие вопросы поможет ответить детский психолог онлайн.</p>
+              </div>
+
+              <div style="margin-top: 30px;" class="blox2">
+                <h2 class="text-2xl max-w-xl font-bold">Преимущества онлайн-консультации детского психолога</h2>
+                <p style="margin-top: 10px;" class="max-w-xl">Каждый родитель хочет, чтобы его ребенок рос сильной уравновешенной личностью. Мы понимаем, что именно в детстве формируются зачатки характера. Как справиться с возникающими проблемами, как выстроить отношения с ребенком, чтобы он доверял вам? На эти и другие вопросы поможет ответить детский психолог онлайн.</p>
+              </div>
+
+              <div style="margin-top: 30px;" class="blox3">
+                <h2 class=" font-bold text-2xl">Когда нужна помощь детского психолога онлайн?</h2>
+                <p style="margin-top: 10px;" class="max-w-xl">Онлайн-консультация детского психолога может быть полезна, если у вас есть вопросы по таким темам, как:</p>
+                <div style="margin-top: 20px;" class="lilu list-decimal">
+                  <ul class="flex flex-col gap-2">
+                    <li>Плохая успеваемость;</li>
+                    <li>Стеснительность;</li>
+                    <li>Цифровая зависимость;</li>
+                    <li>Агрессия;</li>
+                    <li>Потеря близкого в семье;</li>
+                    <li>Возрастной кризис;</li>
+                    <li>Подготовка к детскому саду или школе;</li>
+                    <li>Профориентация.</li>
+                  </ul>
+                </div>
+                <p style="margin-top: 25px;" class="max-w-xl">Это лишь часть тем, которые можно затронуть. Помните, что, если возникает ситуация, в которой вы самостоятельно не можете разобраться, сейчас консультация детского психолога онлайн поможет найти ответы.</p>
+              </div>
+
+              <div style="margin-top: 30px;" class="blox4">
+                <h2 class="max-w-xl font-bold text-2xl">Как проходит онлайн-консультация детского психолога?</h2>
+                <p style="margin-top: 20px;" class="max-w-xl">Задать вопрос детскому психологу онлайн может как сам ребенок, так и родитель. </p>
+              </div>
+            </div>
+              
+            <div class="text__block2">
+              <div class="blox1">
+                <p style="margin-top: 20px;" class="max-w-xl">
+                  На первом сеансе обычно присутствует родитель или опекун, а также сам «виновник торжества». Следующие сеансы могут быть и без взрослого, если ребенок сам в состоянии связаться через интернет.
+                </p>
+                <p style="margin-top: 20px;" class="max-w-xl">
+                  Бывает и так, что сначала ребенку присутствовать необязательно. В этом случае работа происходит с родителем, а если есть необходимость, позже присоединяется ребенок.
+                </p>
+                <p style="margin-top: 20px;" class="max-w-xl">
+                  Психолог по детским вопросам онлайн может попросить ребенка нарисовать что-то, далее по этим рисункам он проведет диагностику. Родитель тоже является звеном связи с психикой ребенка. Через него психолог может сделать вывод о том, какая проблема сейчас назрела.
+                </p>
+                <p style="margin-top: 20px;" class="max-w-xl">
+                  Если специалист попросит вас пройти обследование или сдать анализы для более ясной картины, не пугайтесь, это нормально. Таким образом, вы оба сможете исключить какие-либо диагнозы
+                </p>
+              </div>
+              <div style="margin-top: 30px;" class="blox2">
+                <h2 class="font-bold text-2xl">О чем поговорить с детским психологом?</h2>
+                <p style="margin-top: 20px;" class="max-w-xl">
+                  Родители малышей часто обращаются с вопросами об адаптации в детском саду. Есть тревожные мамы, которые сомневаются, стоит ли отдавать малыша в сад или же пока слишком рано. Очень многих волнует, что воспитатель будет срываться на ребенка. Это логично, ведь в силу того, что в СМИ регулярно появляются жуткие новости о чудовищных ЧП в детсадах, беспокойство обосновано. 
+                </p>
+
+                <p style="margin-top: 20px;" class="max-w-xl">
+                  Отдельный вопрос подготовки к саду. В интернете полно информации в таком ключе: «ребенок должен научиться самостоятельно есть, ходить в туалет и засыпать сам перед тем, как идти в сад». Особо мнительные беспрекословно верят, другие понимают: ребенок ничего никому не должен. Его невозможно научить чему-то, пока он сам не захочет делать это. «Дрессировке» малыши не поддаются. Но пугаться не стоит, в любом случае, воспитатели будут помогать малышам в этих вопросах. Главное – настроиться на позитив и верить в хорошее. 
+                </p>
+
+                <p style="margin-top: 20px;" class="max-w-xl">
+                  Дети постарше сталкиваются с проблемами переходного возраста, неуверенностью в себе, безответной любовью и другими. Если вы понимаете, что вам с чадом необходима онлайн-консультация, вы можете выбрать специалиста на нашем сайте. 
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+		</main>
+
+    <footer>
+      <div class="container">
+        <div style="margin-top: 200px;" class="footer__items flex  justify-around max-[850px]:flex-col max-[850px]:gap-20 max-[850px]:items-center max-[850px]:text-center">
+          <div class="footer__titels max-[800px]:">
+            <div class="footer__logo">
+              <img class="max-[900px]:w-[180px] max-[500px]:w-[150px]" src="./assect/svg/logo.svg" alt="">
+              <div style="margin-top: 40px;" class="footer__text flex gap-5 ">
+                <a class="text-lg font-medium max-[900px]:text-base" href="#">Home</a>
+                <a class="text-lg font-medium max-[900px]:text-base"  href="#">Blog</a>
+                <a class="text-lg font-medium max-[900px]:text-base"  href="#">Privacy Policy</a>
+              </div>
+              <div style="margin-top: 20px;" class="footer__text1 flex gap-5">
+                <a class="text-lg font-medium max-[900px]:text-base max-[750px]:text-sm"  href="#">About us</a>
+                <a class="text-lg font-medium max-[900px]:text-base max-[750px]:text-sm"  href="#">Contact</a>
+                <a class="text-lg font-medium max-[900px]:text-base max-[750px]:text-sm"  href="#">Terms and Counditions</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__icon">
+            <div class="footer__img flex gap-5">
+              <img class="max-[900px]:w-[30px]" src="./assect/svg/facebook.svg" alt="">
+              <img class="max-[900px]:w-[30px]" src="./assect/svg/instagram.svg" alt="">
+              <img class="max-[900px]:w-[30px]" src="./assect/svg/linkedin.svg" alt="">
+              <img class="max-[900px]:w-[30px]" src="./assect/svg/twiter.svg" alt="">
+            </div>
+
+            <div style="margin-top: 37px;" class="footer__icon__text flex gap-5 items-center">
+              <img src="./assect/svg/gmail.svg" alt="">
+              <p class="font-medium text-lg max-[900px]:text-base">info@speak.help</p>
+            </div>
+            <div style="margin-top: 20px;" class="footer__icon__text1 flex gap-5 items-center">
+              <img src="./assect/svg/komp.svg" alt="">
+              <p class="font-medium text-lg max-[900px]:text-sm">33 W 60th Street, 8th FI New York, NY 10023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+		<script src="./scipt.js"></script>
+	</body>
+</html>
